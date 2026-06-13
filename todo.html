@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ToDo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>✅ My Tasks</h1>
+
+<button
+class="primary"
+onclick="location.href='addTodo.html'">
+➕ Add Task
+</button>
+
+<div id="todoList"></div>
+
+<button
+class="secondary"
+onclick="location.href='home.html'">
+⬅ Back
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+checkLogin();
+loadTodos();
+</script>
+
+</body>
+</html>

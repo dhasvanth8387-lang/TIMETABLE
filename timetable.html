@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timetable</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📅 Timetable</h1>
+
+<button
+class="primary"
+onclick="location.href='addTimetable.html'">
+➕ Add Activity
+</button>
+
+<div id="timetableList"></div>
+
+<button
+class="secondary"
+onclick="location.href='home.html'">
+⬅ Back
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+checkLogin();
+loadTimetable();
+</script>
+
+</body>
+</html>

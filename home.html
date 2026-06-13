@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="welcome">Welcome</h1>
+
+<button
+class="primary"
+onclick="location.href='timetable.html'">
+📅 Timetable
+</button>
+
+<button
+class="secondary"
+onclick="location.href='todo.html'">
+✅ To-Do List
+</button>
+
+<button
+class="danger"
+onclick="logout()">
+🚪 Logout
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+checkLogin();
+
+document.getElementById("welcome").innerText =
+"Welcome, " + localStorage.getItem("currentUser");
+</script>
+
+</body>
+</html>
